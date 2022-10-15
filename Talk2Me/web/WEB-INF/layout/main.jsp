@@ -74,7 +74,7 @@
                         <ul class="d-flex">
                             <li><a href="./index.html">Trang chủ</a></li>
                             <li><a href="./apointment.html">Đặt lịch hẹn</a></li>
-                            <li><a href="./forum.html">Diễn đàn</a></li>
+                           
                             <li><a href="./login.html">Đăng nhập</a></li>
                         </ul>
                     </div>
