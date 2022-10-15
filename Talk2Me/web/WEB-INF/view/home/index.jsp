@@ -1,8 +1,11 @@
 <%-- 
     Document   : index.jsp
-    Created on : Oct 15, 2022, 8:09:20 PM
+    Created on : Oct 15, 2022, 9:01:14 PM
     Author     : tuan vu
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<jsp:forward page="/home/index.do"/>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+HELLO
+
+
