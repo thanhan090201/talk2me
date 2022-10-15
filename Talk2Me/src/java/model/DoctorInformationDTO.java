@@ -9,41 +9,37 @@ package model;
  * @author tuan vu
  */
 public class DoctorInformationDTO {
-    private int doctor_Information_Id ;
-    private String description_Information;
-    private String degree;
-    private String image_Degree_Url;
-    private boolean independent;
-    private int hospital_Id;
-    private int user_Id; 
+   private String nameDoctor;
+   private String avarta;
+   private String phone;
+   private String degree;
+   private String hospital;
 
     public DoctorInformationDTO() {
     }
 
-    public DoctorInformationDTO(int doctor_Information_Id, String description_Information, String degree, String image_Degree_Url, boolean independent, int hospital_Id, int user_Id) {
-        this.doctor_Information_Id = doctor_Information_Id;
-        this.description_Information = description_Information;
-        this.degree = degree;
-        this.image_Degree_Url = image_Degree_Url;
-        this.independent = independent;
-        this.hospital_Id = hospital_Id;
-        this.user_Id = user_Id;
+    public String getNameDoctor() {
+        return nameDoctor;
     }
 
-    public int getDoctor_Information_Id() {
-        return doctor_Information_Id;
+    public void setNameDoctor(String nameDoctor) {
+        this.nameDoctor = nameDoctor;
     }
 
-    public void setDoctor_Information_Id(int doctor_Information_Id) {
-        this.doctor_Information_Id = doctor_Information_Id;
+    public String getAvarta() {
+        return avarta;
     }
 
-    public String getDescription_Information() {
-        return description_Information;
+    public void setAvarta(String avarta) {
+        this.avarta = avarta;
     }
 
-    public void setDescription_Information(String description_Information) {
-        this.description_Information = description_Information;
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
     public String getDegree() {
@@ -54,37 +50,21 @@ public class DoctorInformationDTO {
         this.degree = degree;
     }
 
-    public String getImage_Degree_Url() {
-        return image_Degree_Url;
+    public String getHospital() {
+        return hospital;
     }
 
-    public void setImage_Degree_Url(String image_Degree_Url) {
-        this.image_Degree_Url = image_Degree_Url;
+    public void setHospital(String hospital) {
+        this.hospital = hospital;
     }
 
-    public boolean isIndependent() {
-        return independent;
+    public DoctorInformationDTO(String nameDoctor, String avarta, String phone, String degree, String hospital) {
+        this.nameDoctor = nameDoctor;
+        this.avarta = avarta;
+        this.phone = phone;
+        this.degree = degree;
+        this.hospital = hospital;
     }
-
-    public void setIndependent(boolean independent) {
-        this.independent = independent;
-    }
-
-    public int getHospital_Id() {
-        return hospital_Id;
-    }
-
-    public void setHospital_Id(int hospital_Id) {
-        this.hospital_Id = hospital_Id;
-    }
-
-    public int getUser_Id() {
-        return user_Id;
-    }
-
-    public void setUser_Id(int user_Id) {
-        this.user_Id = user_Id;
-    }
-    
+   
     
 }

@@ -20,13 +20,19 @@ public class User {
     private boolean gender;
     private String avatar;
     private int role;
-    private Date create_Date_User;
     private boolean is_Blocked;
 
+    public User(int user_Id, String user_Name, String password) {
+        this.user_Id = user_Id;
+        this.user_Name = user_Name;
+        this.password = password;
+    }
+
+    
     public User() {
     }
 
-    public User(int user_Id, String user_Name, String name, String email, String password, String phoneNumber, boolean gender, String avatar, int role, Date create_Date_User, boolean is_Blocked) {
+    public User(int user_Id, String user_Name, String name, String email, String password, String phoneNumber, boolean gender, String avatar, int role,  boolean is_Blocked) {
         this.user_Id = user_Id;
         this.user_Name = user_Name;
         this.name = name;
@@ -36,7 +42,6 @@ public class User {
         this.gender = gender;
         this.avatar = avatar;
         this.role = role;
-        this.create_Date_User = create_Date_User;
         this.is_Blocked = is_Blocked;
     }
 
@@ -112,13 +117,7 @@ public class User {
         this.role = role;
     }
 
-    public Date getCreate_Date_User() {
-        return create_Date_User;
-    }
-
-    public void setCreate_Date_User(Date create_Date_User) {
-        this.create_Date_User = create_Date_User;
-    }
+    
 
     public boolean isIs_Blocked() {
         return is_Blocked;

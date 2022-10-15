@@ -13,11 +13,10 @@ import java.util.Date;
 public class BookingDTO {
     private int booking_id;
     private Date begin_Time;
-    private Date end_Time;
+    private int end_Time;
     private float total_Amount;
     private boolean status_Booking;
-    private float payment_Method;
-    private Date create_Date_Booking;
+    private int payment_Method;
     private int schedule_Id;
     private int doctor_Id;
     private int patient_Id;
@@ -25,14 +24,13 @@ public class BookingDTO {
     public BookingDTO() {
     }
 
-    public BookingDTO(int booking_id, Date begin_Time, Date end_Time, float total_Amount, boolean status_Booking, float payment_Method, Date create_Date_Booking, int schedule_Id, int doctor_Id, int patient_Id) {
+    public BookingDTO(int booking_id, Date begin_Time, int end_Time, float total_Amount, boolean status_Booking, int payment_Method, Date create_Date_Booking, int schedule_Id, int doctor_Id, int patient_Id) {
         this.booking_id = booking_id;
         this.begin_Time = begin_Time;
         this.end_Time = end_Time;
         this.total_Amount = total_Amount;
         this.status_Booking = status_Booking;
         this.payment_Method = payment_Method;
-        this.create_Date_Booking = create_Date_Booking;
         this.schedule_Id = schedule_Id;
         this.doctor_Id = doctor_Id;
         this.patient_Id = patient_Id;
@@ -54,11 +52,11 @@ public class BookingDTO {
         this.begin_Time = begin_Time;
     }
 
-    public Date getEnd_Time() {
+    public int getEnd_Time() {
         return end_Time;
     }
 
-    public void setEnd_Time(Date end_Time) {
+    public void setEnd_Time(int end_Time) {
         this.end_Time = end_Time;
     }
 
@@ -78,22 +76,15 @@ public class BookingDTO {
         this.status_Booking = status_Booking;
     }
 
-    public float getPayment_Method() {
+    public int getPayment_Method() {
         return payment_Method;
     }
 
-    public void setPayment_Method(float payment_Method) {
+    public void setPayment_Method(int payment_Method) {
         this.payment_Method = payment_Method;
     }
 
-    public Date getCreate_Date_Booking() {
-        return create_Date_Booking;
-    }
-
-    public void setCreate_Date_Booking(Date create_Date_Booking) {
-        this.create_Date_Booking = create_Date_Booking;
-    }
-
+   
     public int getSchedule_Id() {
         return schedule_Id;
     }

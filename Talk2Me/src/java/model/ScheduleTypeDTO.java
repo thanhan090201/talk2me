@@ -11,39 +11,34 @@ import java.util.Date;
  * @author tuan vu
  */
 public class ScheduleTypeDTO {
-    private int schedule_Type_Id;
-    private int location_Id;
+
     private String name;
-    private String description_Schedule_Type;
-    private boolean status_Schedule_Type;
-    private Date create_Date_Schedule_Type;
+    private String title;
+    private float price;
+    private int schedule_Id;
+
+    public ScheduleTypeDTO(String name, String title, float price, int schedule_Id) {
+        this.name = name;
+        this.title = title;
+        this.price = price;
+        this.schedule_Id = schedule_Id;
+    }
+
+    public int getSchedule_Id() {
+        return schedule_Id;
+    }
+
+    public void setSchedule_Id(int schedule_Id) {
+        this.schedule_Id = schedule_Id;
+    }
+
+    public ScheduleTypeDTO(String name, String title, float price) {
+        this.name = name;
+        this.title = title;
+        this.price = price;
+    }
 
     public ScheduleTypeDTO() {
-    }
-
-    public ScheduleTypeDTO(int schedule_Type_Id, int location_Id, String name, String description_Schedule_Type, boolean status_Schedule_Type, Date create_Date_Schedule_Type) {
-        this.schedule_Type_Id = schedule_Type_Id;
-        this.location_Id = location_Id;
-        this.name = name;
-        this.description_Schedule_Type = description_Schedule_Type;
-        this.status_Schedule_Type = status_Schedule_Type;
-        this.create_Date_Schedule_Type = create_Date_Schedule_Type;
-    }
-
-    public int getSchedule_Type_Id() {
-        return schedule_Type_Id;
-    }
-
-    public void setSchedule_Type_Id(int schedule_Type_Id) {
-        this.schedule_Type_Id = schedule_Type_Id;
-    }
-
-    public int getLocation_Id() {
-        return location_Id;
-    }
-
-    public void setLocation_Id(int location_Id) {
-        this.location_Id = location_Id;
     }
 
     public String getName() {
@@ -54,29 +49,20 @@ public class ScheduleTypeDTO {
         this.name = name;
     }
 
-    public String getDescription_Schedule_Type() {
-        return description_Schedule_Type;
+    public String getTitle() {
+        return title;
     }
 
-    public void setDescription_Schedule_Type(String description_Schedule_Type) {
-        this.description_Schedule_Type = description_Schedule_Type;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
-    public boolean isStatus_Schedule_Type() {
-        return status_Schedule_Type;
+    public float getPrice() {
+        return price;
     }
 
-    public void setStatus_Schedule_Type(boolean status_Schedule_Type) {
-        this.status_Schedule_Type = status_Schedule_Type;
+    public void setPrice(float price) {
+        this.price = price;
     }
 
-    public Date getCreate_Date_Schedule_Type() {
-        return create_Date_Schedule_Type;
-    }
-
-    public void setCreate_Date_Schedule_Type(Date create_Date_Schedule_Type) {
-        this.create_Date_Schedule_Type = create_Date_Schedule_Type ;
-    }
-    
-     
 }
