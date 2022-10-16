@@ -22,7 +22,7 @@ import model.ScheduleTypeDTO;
  *
  * @author tuan vu
  */
-@WebServlet(name = "HomeControler", urlPatterns = {"/doctor"})
+@WebServlet(name = "DoctorControler", urlPatterns = {"/doctor"})
 public class DoctorControler extends HttpServlet {
     List<DoctorInformationDTO> listDoctor = null;
 

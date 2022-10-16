@@ -52,7 +52,7 @@ values (N'Link Google Meet',N'Click Vào Để Gặp Bác Sĩ','',1)
 
 insert into ScheduleType([location_Id],[name],
 [description_Schedule_Type],[status_Schedule_Type])
-values(1,'Đặt Lịch Offline','',1)
+values(1,N'Đặt Lịch Offline','',1)
 
 insert into ScheduleType([location_Id],[name],
 [description_Schedule_Type],[status_Schedule_Type])

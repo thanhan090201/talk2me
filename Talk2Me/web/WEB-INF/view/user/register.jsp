@@ -11,6 +11,56 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
+        <style>
+            * {
+                box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+            }
+
+            /* Header starts */
+            header {
+                background-color: #38184b;
+                height: 120px;
+            }
+
+            header img {
+                height: 80px;
+                width: 80px;
+            }
+
+            header .header__left {
+                margin-top: 20px;
+            }
+
+            header .logo__content {
+                padding-top: 15px;
+                padding-left: 10px;
+                color: white;
+            }
+
+            header ul li {
+                list-style: none;
+            }
+
+            header .header__right a {
+                color: white;
+                padding-right: 10px;
+                line-height: 100px;
+            }
+
+            header .header__right a:hover {
+                text-decoration: none;
+            }
+            /* Header ends */
+
+            /* Footer starts */
+            footer {
+                background-color: #38184b;
+                color: white;
+            }
+            /* Footer ends */
+        </style>
     </head>
     <body>
         <form class="card-body cardbody-color p-lg-5" action="<c:url value="Create_Account.do"/>">

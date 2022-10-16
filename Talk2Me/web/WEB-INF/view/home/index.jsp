@@ -150,7 +150,7 @@
         <div class="carousel animate__animated animate__fadeInUp">
             <div class="container">
                 <div class="carousel__img">
-                    <img class="img-fluid" src="./img/carousel.png">
+                    <img class="img-fluid" src="<c:url value="/img/carousel.png"/>">
                 </div>
                 <div class="carousel__content text-center">
                     <h1>Welcomes to Talk2me</h1>
@@ -175,7 +175,7 @@
                     </ul>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="./img/advertise.png" alt="Los Angeles" width="1100" height="500">
+                            <img src="<c:url value="/img/advertise.png"/>" alt="Los Angeles" width="1100" height="500">
                             <div class="carousel-caption">
                                 <h1>Bác sĩ/Chuyên viên tận tâm</h1>
                                 <p>Là một thành viên góp phần tạo nên cộng đồng của Talk2me. Với đội ngũ bác sĩ và chuyên
@@ -186,7 +186,7 @@
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="./img/advertise.png" alt="Chicago" width="1100" height="500">
+                            <img src="<c:url value="/img/advertise.png"/>" alt="Chicago" width="1100" height="500">
                             <div class="carousel-caption">
                                 <h1>Bác sĩ/Chuyên viên tận tâm</h1>
                                 <p>Là một thành viên góp phần tạo nên cộng đồng của Talk2me. Với đội ngũ bác sĩ và chuyên
@@ -197,7 +197,7 @@
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="./img/advertise.png" alt="New York" width="1100" height="500">
+                            <img src="<c:url value="/img/advertise.png"/>" alt="New York" width="1100" height="500">
                             <div class="carousel-caption">
                                 <h1>Bác sĩ/Chuyên viên tận tâm</h1>
                                 <p>Là một thành viên góp phần tạo nên cộng đồng của Talk2me. Với đội ngũ bác sĩ và chuyên
@@ -223,15 +223,15 @@
                 <div class="advertise__content">
                     <div class="advertise__list d-flex justify-content-between">
                         <div class="advertise__item text-center">
-                            <img class="img-fluid" src="./img/ad1.png">
+                            <img class="img-fluid" src="<c:url value="/img/ad1.png"/>">
                             <p>Giao lưu học hỏi</p>
                         </div>
                         <div class="advertise__item text-center">
-                            <img class="img-fluid" src="./img/2ad.jpg">
+                            <img class="img-fluid" src="<c:url value="/img/2ad.jpg"/>">
                             <p>Phát triển cộng đồng</p>
                         </div>
                         <div class="advertise__item text-center">
-                            <img class="img-fluid" src="./img/3ad.jpg">
+                            <img class="img-fluid" src="<c:url value="/img/3ad.jpg"/>">
                             <p>Kết nối yêu thương</p>
                         </div>
                     </div>
