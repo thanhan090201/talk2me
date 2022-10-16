@@ -176,36 +176,12 @@
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="<c:url value="/img/advertise.png"/>" alt="Los Angeles" width="1100" height="500">
-                            <div class="carousel-caption">
-                                <h1>Bác sĩ/Chuyên viên tận tâm</h1>
-                                <p>Là một thành viên góp phần tạo nên cộng đồng của Talk2me. Với đội ngũ bác sĩ và chuyên
-                                    viên tận
-                                    tâm,
-                                    chúng
-                                    tôi sẽ giúp những người bệnh nhân có trải nghiệm tốt nhất khi sử dụng dịch vụ.</p>
-                            </div>
                         </div>
                         <div class="carousel-item">
                             <img src="<c:url value="/img/2ad1.jpg"/>" alt="Chicago" width="1100" height="500">
-                            <div class="carousel-caption">
-                                <h1>Bác sĩ/Chuyên viên tận tâm</h1>
-                                <p>Là một thành viên góp phần tạo nên cộng đồng của Talk2me. Với đội ngũ bác sĩ và chuyên
-                                    viên tận
-                                    tâm,
-                                    chúng
-                                    tôi sẽ giúp những người bệnh nhân có trải nghiệm tốt nhất khi sử dụng dịch vụ.</p>
-                            </div>
                         </div>
                         <div class="carousel-item">
                             <img src="<c:url value="/img/3ad1.jpg"/>" alt="New York" width="1100" height="500">
-                            <div class="carousel-caption">
-                                <h1>Bác sĩ/Chuyên viên tận tâm</h1>
-                                <p>Là một thành viên góp phần tạo nên cộng đồng của Talk2me. Với đội ngũ bác sĩ và chuyên
-                                    viên tận
-                                    tâm,
-                                    chúng
-                                    tôi sẽ giúp những người bệnh nhân có trải nghiệm tốt nhất khi sử dụng dịch vụ.</p>
-                            </div>
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#demo" data-slide="prev">
