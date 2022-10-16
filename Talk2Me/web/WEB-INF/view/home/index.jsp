@@ -220,7 +220,7 @@
                 <div class="contact__content d-flex justify-content-between">
                     <div class="contact__left">
                         <h1>Contact Us</h1>
-                        <p>Số 49 Hai Bà Trưng, quận Hoàn Kiếm, Hà Nội, 100000</p>
+                        <p>Lô E2a-7, Đường D1, Đ. D1, Long Thạnh Mỹ, Thành Phố Thủ Đức, Thành phố Hồ Chí Minh 700000</p>
                         <p>nhungdcse151533@fpt.edu.vn</p>
                         <p>024 3456 7890</p>
                     </div>

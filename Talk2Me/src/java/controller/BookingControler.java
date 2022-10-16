@@ -20,6 +20,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import model.BookingDTO;
+import model.DoctorInformationDTO;
 import model.ScheduleTypeDTO;
 import model.User;
 
@@ -30,6 +31,7 @@ import model.User;
 @WebServlet(name = "BookingControler", urlPatterns = {"/booking"})
 public class BookingControler extends HttpServlet {
 
+    List<DoctorInformationDTO> listDoctor = null;
     List<ScheduleTypeDTO> listScheduleType = null;
 
     @Override
@@ -37,6 +39,7 @@ public class BookingControler extends HttpServlet {
         super.init();
         DAO gf = new DAO();
         listScheduleType = gf.selectScheduleType();
+        listDoctor = gf.selectDoctor();
     }
 
     /**
@@ -60,6 +63,7 @@ public class BookingControler extends HttpServlet {
                 request.getRequestDispatcher(Config.LAYOUT).forward(request, response);
                 break;
             case "bookingDoctor":
+                request.setAttribute("doctor", listDoctor);
                 request.getRequestDispatcher(Config.LAYOUT).forward(request, response);
                 break;
             case "createBooking":

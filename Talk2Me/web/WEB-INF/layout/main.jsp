@@ -84,7 +84,7 @@
                         <ul class="d-flex">
                             <li><a href="<c:url value="/home/index.do"/>">Trang chủ</a></li>
                             <li><a href="<c:url value="/booking/booking.do"/>">Đặt lịch hẹn</a></li>
-                            <li><a href="<c:url value="/user/login.do"/>">Đăng nhập</a></li>
+                              <li><a href="<c:url value="/user/login.do"/>">Đăng nhập</a></li>
                         </ul>
                     </div>
                 </div>

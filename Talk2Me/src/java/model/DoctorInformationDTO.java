@@ -14,6 +14,25 @@ public class DoctorInformationDTO {
    private String phone;
    private String degree;
    private String hospital;
+   private int doctorId;
+
+    public int getDoctorId() {
+        return doctorId;
+    }
+
+    public void setDoctorId(int doctorId) {
+        this.doctorId = doctorId;
+    }
+
+    public DoctorInformationDTO(String nameDoctor, String avarta, String phone, String degree, String hospital, int doctorId) {
+        this.nameDoctor = nameDoctor;
+        this.avarta = avarta;
+        this.phone = phone;
+        this.degree = degree;
+        this.hospital = hospital;
+        this.doctorId = doctorId;
+    }
+   
 
     public DoctorInformationDTO() {
     }

@@ -74,21 +74,22 @@
     <body>
         <div class="container">
             <div class="row">
-            <c:forEach items="${list}" var="st">
-            <div class="col-lg-6">
-                <input type="hidden" name="scheduleId" value="${st.schedule_Id}"/>
-                <input type="hidden" name="price" value="${st.price}"/>
-                <h1>${st.name}</h1>
-                <h2>${st.title}</h2>
-                <h3>${st.price}</h3>
-                <h3><a href="<c:url value="/booking/bookingDoctor.do"/>">Đặt Lịch</a></h3>
-                <br/>
-            </div>
+                <c:forEach items="${list}" var="st">
+                    <div class="col-lg-6">
+                        <img src="<c:url value="/img/2doc.jpg" />"/>
+                        <input type="hidden" name="scheduleId" value="${st.schedule_Id}"/>
+                        <input type="hidden" name="price" value="${st.price}"/>
+                        <h1>${st.name}</h1>
+                        <h2>${st.title}</h2>
+                        <h3>${st.price} VND/H</h3>
+                        <h3><a href="<c:url value="/booking/bookingDoctor.do"/>">Đặt Lịch</a></h3>
+                        <br/>
+                    </div>
 
-        </c:forEach>
+                </c:forEach>
+            </div>
         </div>
-        </div>
-        
-        
+
+
     </body>
 </html>

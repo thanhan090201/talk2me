@@ -16,7 +16,23 @@ public class ScheduleTypeDTO {
     private String title;
     private float price;
     private int schedule_Id;
+    private String img;
 
+    public ScheduleTypeDTO(String name, String title, float price, int schedule_Id, String img) {
+        this.name = name;
+        this.title = title;
+        this.price = price;
+        this.schedule_Id = schedule_Id;
+        this.img = img;
+    }
+
+    public String getImg() {
+        return img;
+    }
+
+    public void setImg(String img) {
+        this.img = img;
+    }
     public ScheduleTypeDTO(String name, String title, float price, int schedule_Id) {
         this.name = name;
         this.title = title;

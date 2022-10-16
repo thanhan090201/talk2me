@@ -57,7 +57,7 @@ public class DAO {
         List<ScheduleTypeDTO> list = null;
         try {
             Statement sm = con.createStatement();
-            ResultSet rs = sm.executeQuery("select name,title,price,d.schedule_Id as id\n"
+            ResultSet rs = sm.executeQuery("select name,title,price,d.schedule_Id as id,d.description_Schedule as img\n"
                     + "from Schedule d inner join ScheduleType t on\n"
                     + "d.schedule_Type_Id=t.schedule_Type_Id");
             list = new ArrayList<>();
@@ -67,6 +67,7 @@ public class DAO {
                 sd.setTitle(rs.getString("title"));
                 sd.setPrice(rs.getFloat("price"));
                 sd.setSchedule_Id(rs.getInt("id"));
+                sd.setImg(rs.getString("img"));
                 list.add(sd);
             }
             con.close();
@@ -81,7 +82,7 @@ public class DAO {
         List<DoctorInformationDTO> list = null;
         try {
             Statement sm = con.createStatement();
-            ResultSet rs = sm.executeQuery("select u.name as nameDoctor, avatar,phoneNumber,degree,h.name as hospital\n"
+            ResultSet rs = sm.executeQuery("select u.name as nameDoctor, avatar,phoneNumber,degree,h.name as hospital,u.user_Id as doctorId\n"
                     + "from [dbo].[User] u inner join DoctorInformation d on\n"
                     + "	u.user_Id=d.user_Id inner join Hospital h on d.hospital_Id=h.hospital_Id\n"
                     + "where role=2");
@@ -93,6 +94,7 @@ public class DAO {
                 sd.setPhone(rs.getString("phoneNumber"));
                 sd.setDegree(rs.getString("degree"));
                 sd.setHospital(rs.getString("hospital"));
+                sd.setDoctorId(rs.getInt("doctorId"));
                 list.add(sd);
             }
             con.close();
