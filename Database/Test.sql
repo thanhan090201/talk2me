@@ -6,7 +6,7 @@ delete [dbo].[User] where [user_Id]=4
 delete Hospital where [hospital_Id]=2
 
 alter table [dbo].[ScheduleType]
-update [dbo].[Schedule] set [title]=N'Tư Vấn Tâm Lý (chuyên sâu)' where [schedule_Id]=2
+update [dbo].[ScheduleType] set [name]=N'Đặt Lịch Offline' where [schedule_Type_Id]=1
 alter table [dbo].[Booking]
 alter column [payment_Method] int
 
